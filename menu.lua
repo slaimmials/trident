@@ -30,7 +30,7 @@ Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 342, 0, 19)
 Title.Font = Enum.Font.SourceSans
-Title.Text = "Trident [0.12A]"
+Title.Text = "Trident [0.13A]"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 16.000
 
@@ -115,15 +115,15 @@ Combat.TextSize = 16.000
 
 -- Scripts:
 
-local function YTFPVEH_fake_script() -- Close.LocalScript 
+local function TQEK_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.InputBegan:Connect(function(input)
 		script.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(YTFPVEH_fake_script)()
-local function YJFYWL_fake_script() -- Main.MoveScript 
+coroutine.wrap(TQEK_fake_script)()
+local function NQZG_fake_script() -- Main.MoveScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -174,8 +174,8 @@ local function YJFYWL_fake_script() -- Main.MoveScript
 		end
 	end)
 end
-coroutine.wrap(YJFYWL_fake_script)()
-local function DEVL_fake_script() -- PlayersESP.LocalScript 
+coroutine.wrap(NQZG_fake_script)()
+local function OTDQDEW_fake_script() -- PlayersESP.LocalScript 
 	local script = Instance.new('LocalScript', PlayersESP)
 
 	local State = false
@@ -225,15 +225,13 @@ local function DEVL_fake_script() -- PlayersESP.LocalScript
 	Down.Position = UDim2.new(0, 0, 0.975300014, 0)
 	Down.Size = UDim2.new(1.00980389, 0, 0.024271844, 0)
 	
-	script.Parent.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	script.Parent.Activated:Connect(function(input)
 			State = not State
 			if State then
 				script.Parent.BackgroundColor3 = Color3.fromRGB(38, 135, 33)
 			else
 				script.Parent.BackgroundColor3 = Color3.fromRGB(135, 34, 34)
 			end
-		end
 	end)
 	
 	while wait(0.1) do
@@ -259,14 +257,74 @@ local function DEVL_fake_script() -- PlayersESP.LocalScript
 			end
 		end)
 	end
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 end
-coroutine.wrap(DEVL_fake_script)()
-local function NPTHM_fake_script() -- Visuals_2.LocalScript 
+coroutine.wrap(OTDQDEW_fake_script)()
+local function BUKEM_fake_script() -- Visuals_2.LocalScript 
 	local script = Instance.new('LocalScript', Visuals_2)
 
 	local State = false
-	script.Parent.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	script.Parent.InputBegan:Connect(function(input) 
 			State = not State
 			if State then
 				for _,v in pairs(script.Parent.Parent.Functions:GetChildren()) do
@@ -282,16 +340,14 @@ local function NPTHM_fake_script() -- Visuals_2.LocalScript
 			else
 				script.Parent.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 			end
-		end
 	end)
 end
-coroutine.wrap(NPTHM_fake_script)()
-local function SZYK_fake_script() -- Player.LocalScript 
+coroutine.wrap(BUKEM_fake_script)()
+local function SUHRWFL_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	local State = false
 	script.Parent.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			State = not State
 			if State then
 				for _,v in pairs(script.Parent.Parent.Functions:GetChildren()) do
@@ -307,16 +363,14 @@ local function SZYK_fake_script() -- Player.LocalScript
 			else
 				script.Parent.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 			end
-		end
 	end)
 end
-coroutine.wrap(SZYK_fake_script)()
-local function DLJDSZF_fake_script() -- Combat.LocalScript 
+coroutine.wrap(SUHRWFL_fake_script)()
+local function TZZGYQY_fake_script() -- Combat.LocalScript 
 	local script = Instance.new('LocalScript', Combat)
 
 	local State = false
 	script.Parent.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			State = not State
 			if State then
 				for _,v in pairs(script.Parent.Parent.Functions:GetChildren()) do
@@ -332,7 +386,6 @@ local function DLJDSZF_fake_script() -- Combat.LocalScript
 			else
 				script.Parent.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 			end
-		end
 	end)
 end
-coroutine.wrap(DLJDSZF_fake_script)()
+coroutine.wrap(TZZGYQY_fake_script)()
