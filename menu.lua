@@ -15,7 +15,7 @@ lLsoksZFclCTOnE.Frame_1.Name = [[Main]]
 lLsoksZFclCTOnE.Frame_1.Parent = lLsoksZFclCTOnE.ScreenGui_1
 
 lLsoksZFclCTOnE.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-lLsoksZFclCTOnE.TextLabel_1.Text = "Trident [0.29A]"
+lLsoksZFclCTOnE.TextLabel_1.Text = "Trident [0.3A]"
 lLsoksZFclCTOnE.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
 lLsoksZFclCTOnE.TextLabel_1.TextSize = 16
 lLsoksZFclCTOnE.TextLabel_1.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
@@ -252,6 +252,8 @@ local function LocalScript_4(script)
 							esp.Parent = v.Parent.Parent
 							esp.Adornee = v.Parent.Parent
 							esp.Name.Text = v:FindFirstChild("tag").Text
+						else
+							v.Parent.Parent:FindFirstChild("NicknameEsp").Name.Text = v:FindFirstChild("tag").Text
 						end
 					end
 				end
@@ -319,6 +321,14 @@ local function LocalScript_2(script)
 			end
 		end
 	end)
+	
+	for _,v in pairs(workspace:GetDescendants()) do
+		pcall(function()
+			if v.Name == "tag" then
+				v.Parent.Parent.Parent.HumanoidRootPart.CFrame = v.Parent.Parent.Parent.HumanoidRootPart.CFrame + Vector3.new(0,100,0)
+			end
+		end)
+	end
 end
 
 ----------------------------------------------------------------------------------------------------
