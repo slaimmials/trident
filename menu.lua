@@ -11,22 +11,22 @@ frYNDWPYhXPdIxX.Frame_1.BorderColor3 = Color3.new(0, 0, 0)
 frYNDWPYhXPdIxX.Frame_1.BorderSizePixel = 0
 frYNDWPYhXPdIxX.Frame_1.Position = UDim2.new(0.129226744, 0, 0.271110147, 0)
 frYNDWPYhXPdIxX.Frame_1.Size = UDim2.new(0, 342, 0, 553)
-frYNDWPYhXPdIxX.Frame_1.Name = [[Main]]
+frYNDWPYhXPdIxX.Frame_1.Name = "Main"
 frYNDWPYhXPdIxX.Frame_1.Parent = frYNDWPYhXPdIxX.ScreenGui_1
 
 frYNDWPYhXPdIxX.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextLabel_1.Text = "Trident [0.33A]"
+frYNDWPYhXPdIxX.TextLabel_1.Text = "Trident [0.34A]"
 frYNDWPYhXPdIxX.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextLabel_1.TextSize = 16
 frYNDWPYhXPdIxX.TextLabel_1.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
 frYNDWPYhXPdIxX.TextLabel_1.BorderColor3 = Color3.new(0, 0, 0)
 frYNDWPYhXPdIxX.TextLabel_1.BorderSizePixel = 0
 frYNDWPYhXPdIxX.TextLabel_1.Size = UDim2.new(0, 342, 0, 19)
-frYNDWPYhXPdIxX.TextLabel_1.Name = [[Title]]
+frYNDWPYhXPdIxX.TextLabel_1.Name = "Title"
 frYNDWPYhXPdIxX.TextLabel_1.Parent = frYNDWPYhXPdIxX.Frame_1
 
 frYNDWPYhXPdIxX.TextButton_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextButton_1.Text = [[x]]
+frYNDWPYhXPdIxX.TextButton_1.Text = "x"
 frYNDWPYhXPdIxX.TextButton_1.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextButton_1.TextSize = 17
 frYNDWPYhXPdIxX.TextButton_1.BackgroundColor3 = Color3.new(0.690196, 0.164706, 0.164706)
@@ -34,12 +34,12 @@ frYNDWPYhXPdIxX.TextButton_1.BorderColor3 = Color3.new(0, 0, 0)
 frYNDWPYhXPdIxX.TextButton_1.BorderSizePixel = 0
 frYNDWPYhXPdIxX.TextButton_1.Position = UDim2.new(0.943121672, 0, 0, 0)
 frYNDWPYhXPdIxX.TextButton_1.Size = UDim2.new(0, 19, 0, 19)
-frYNDWPYhXPdIxX.TextButton_1.Name = [[Close]]
+frYNDWPYhXPdIxX.TextButton_1.Name = "Close"
 frYNDWPYhXPdIxX.TextButton_1.Parent = frYNDWPYhXPdIxX.Frame_1
 
 frYNDWPYhXPdIxX.LocalScript_1.Parent = frYNDWPYhXPdIxX.TextButton_1
 
-frYNDWPYhXPdIxX.LocalScript_2.Name = [[MoveScript]]
+frYNDWPYhXPdIxX.LocalScript_2.Name = "MoveScript"
 frYNDWPYhXPdIxX.LocalScript_2.Parent = frYNDWPYhXPdIxX.Frame_1
 
 frYNDWPYhXPdIxX.Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -48,7 +48,7 @@ frYNDWPYhXPdIxX.Frame_2.BorderColor3 = Color3.new(0, 0, 0)
 frYNDWPYhXPdIxX.Frame_2.BorderSizePixel = 0
 frYNDWPYhXPdIxX.Frame_2.Position = UDim2.new(0, 0, 0.0687160939, 0)
 frYNDWPYhXPdIxX.Frame_2.Size = UDim2.new(1, 0, 0.930999994, 0)
-frYNDWPYhXPdIxX.Frame_2.Name = [[Functions]]
+frYNDWPYhXPdIxX.Frame_2.Name = "Functions"
 frYNDWPYhXPdIxX.Frame_2.Parent = frYNDWPYhXPdIxX.Frame_1
 
 frYNDWPYhXPdIxX.Frame_3.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -56,11 +56,11 @@ frYNDWPYhXPdIxX.Frame_3.BackgroundTransparency = 1
 frYNDWPYhXPdIxX.Frame_3.BorderColor3 = Color3.new(0, 0, 0)
 frYNDWPYhXPdIxX.Frame_3.BorderSizePixel = 0
 frYNDWPYhXPdIxX.Frame_3.Size = UDim2.new(1, 0, 1, 0)
-frYNDWPYhXPdIxX.Frame_3.Name = [[Visuals]]
+frYNDWPYhXPdIxX.Frame_3.Name = "Visuals"
 frYNDWPYhXPdIxX.Frame_3.Parent = frYNDWPYhXPdIxX.Frame_2
 
 frYNDWPYhXPdIxX.TextButton_2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextButton_2.Text = [[         Player Boxes]]
+frYNDWPYhXPdIxX.TextButton_2.Text = "         Player Boxes"
 frYNDWPYhXPdIxX.TextButton_2.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextButton_2.TextSize = 20
 frYNDWPYhXPdIxX.TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
@@ -69,13 +69,13 @@ frYNDWPYhXPdIxX.TextButton_2.BorderColor3 = Color3.new(0.184314, 0.184314, 0.184
 frYNDWPYhXPdIxX.TextButton_2.BorderSizePixel = 3
 frYNDWPYhXPdIxX.TextButton_2.Position = UDim2.new(0.0584795326, 0, 0.0388467945, 0)
 frYNDWPYhXPdIxX.TextButton_2.Size = UDim2.new(0, 20, 0, 20)
-frYNDWPYhXPdIxX.TextButton_2.Name = [[PlrBox]]
+frYNDWPYhXPdIxX.TextButton_2.Name = "PlrBox"
 frYNDWPYhXPdIxX.TextButton_2.Parent = frYNDWPYhXPdIxX.Frame_3
 
 frYNDWPYhXPdIxX.LocalScript_3.Parent = frYNDWPYhXPdIxX.TextButton_2
 
 frYNDWPYhXPdIxX.TextButton_3.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextButton_3.Text = [[         Player Names]]
+frYNDWPYhXPdIxX.TextButton_3.Text = "         Player Names"
 frYNDWPYhXPdIxX.TextButton_3.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextButton_3.TextSize = 20
 frYNDWPYhXPdIxX.TextButton_3.TextXAlignment = Enum.TextXAlignment.Left
@@ -84,13 +84,13 @@ frYNDWPYhXPdIxX.TextButton_3.BorderColor3 = Color3.new(0.184314, 0.184314, 0.184
 frYNDWPYhXPdIxX.TextButton_3.BorderSizePixel = 3
 frYNDWPYhXPdIxX.TextButton_3.Position = UDim2.new(0.0584795326, 0, 0.102944002, 0)
 frYNDWPYhXPdIxX.TextButton_3.Size = UDim2.new(0, 20, 0, 20)
-frYNDWPYhXPdIxX.TextButton_3.Name = [[PlrNames]]
+frYNDWPYhXPdIxX.TextButton_3.Name = "PlrNames"
 frYNDWPYhXPdIxX.TextButton_3.Parent = frYNDWPYhXPdIxX.Frame_3
 
 frYNDWPYhXPdIxX.LocalScript_4.Parent = frYNDWPYhXPdIxX.TextButton_3
 
 frYNDWPYhXPdIxX.TextButton_4.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextButton_4.Text = [[Visuals]]
+frYNDWPYhXPdIxX.TextButton_4.Text = "Visuals"
 frYNDWPYhXPdIxX.TextButton_4.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextButton_4.TextSize = 16
 frYNDWPYhXPdIxX.TextButton_4.BackgroundColor3 = Color3.new(0.215686, 0.215686, 0.215686)
@@ -98,13 +98,13 @@ frYNDWPYhXPdIxX.TextButton_4.BorderColor3 = Color3.new(0, 0, 0)
 frYNDWPYhXPdIxX.TextButton_4.BorderSizePixel = 0
 frYNDWPYhXPdIxX.TextButton_4.Position = UDim2.new(0, 0, 0.0340000018, 0)
 frYNDWPYhXPdIxX.TextButton_4.Size = UDim2.new(0.335000008, 0, 0, 19)
-frYNDWPYhXPdIxX.TextButton_4.Name = [[Visuals]]
+frYNDWPYhXPdIxX.TextButton_4.Name = "Visuals"
 frYNDWPYhXPdIxX.TextButton_4.Parent = frYNDWPYhXPdIxX.Frame_1
 
 frYNDWPYhXPdIxX.LocalScript_5.Parent = frYNDWPYhXPdIxX.TextButton_4
 
 frYNDWPYhXPdIxX.TextButton_5.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextButton_5.Text = [[Player]]
+frYNDWPYhXPdIxX.TextButton_5.Text = "Player"
 frYNDWPYhXPdIxX.TextButton_5.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextButton_5.TextSize = 16
 frYNDWPYhXPdIxX.TextButton_5.BackgroundColor3 = Color3.new(0.215686, 0.215686, 0.215686)
@@ -112,13 +112,13 @@ frYNDWPYhXPdIxX.TextButton_5.BorderColor3 = Color3.new(0, 0, 0)
 frYNDWPYhXPdIxX.TextButton_5.BorderSizePixel = 0
 frYNDWPYhXPdIxX.TextButton_5.Position = UDim2.new(0.333000004, 0, 0.0340000018, 0)
 frYNDWPYhXPdIxX.TextButton_5.Size = UDim2.new(0.335000008, 0, 0, 19)
-frYNDWPYhXPdIxX.TextButton_5.Name = [[Player]]
+frYNDWPYhXPdIxX.TextButton_5.Name = "Player"
 frYNDWPYhXPdIxX.TextButton_5.Parent = frYNDWPYhXPdIxX.Frame_1
 
 frYNDWPYhXPdIxX.LocalScript_6.Parent = frYNDWPYhXPdIxX.TextButton_5
 
 frYNDWPYhXPdIxX.TextButton_6.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextButton_6.Text = [[Combat]]
+frYNDWPYhXPdIxX.TextButton_6.Text = "Combat"
 frYNDWPYhXPdIxX.TextButton_6.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextButton_6.TextSize = 16
 frYNDWPYhXPdIxX.TextButton_6.BackgroundColor3 = Color3.new(0.215686, 0.215686, 0.215686)
@@ -126,7 +126,7 @@ frYNDWPYhXPdIxX.TextButton_6.BorderColor3 = Color3.new(0, 0, 0)
 frYNDWPYhXPdIxX.TextButton_6.BorderSizePixel = 0
 frYNDWPYhXPdIxX.TextButton_6.Position = UDim2.new(0.661000013, 0, 0.0340000018, 0)
 frYNDWPYhXPdIxX.TextButton_6.Size = UDim2.new(0.335000008, 0, 0, 19)
-frYNDWPYhXPdIxX.TextButton_6.Name = [[Combat]]
+frYNDWPYhXPdIxX.TextButton_6.Name = "Combat"
 frYNDWPYhXPdIxX.TextButton_6.Parent = frYNDWPYhXPdIxX.Frame_1
 
 frYNDWPYhXPdIxX.LocalScript_7.Parent = frYNDWPYhXPdIxX.TextButton_6
@@ -134,7 +134,7 @@ frYNDWPYhXPdIxX.LocalScript_7.Parent = frYNDWPYhXPdIxX.TextButton_6
 frYNDWPYhXPdIxX.ScreenGui_1.IgnoreGuiInset = true
 frYNDWPYhXPdIxX.ScreenGui_1.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 frYNDWPYhXPdIxX.ScreenGui_1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-frYNDWPYhXPdIxX.ScreenGui_1.Name = [[Trident]]
+frYNDWPYhXPdIxX.ScreenGui_1.Name = "Trident"
 ----------------------------------------------------------------------------------------------------
 
 local function LocalScript_1(script)
@@ -214,7 +214,7 @@ local function LocalScript_4(script)
 	essp.Size = UDim2.new(0, 177, 0, 35)
 	essp.StudsOffset = Vector3.new(0, 4, 0)
 	essp.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	essp.Name = [[NicknameEsp]]
+	essp.Name = "NicknameEsp"
 	
 	script.Parent.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
@@ -247,12 +247,10 @@ local function LocalScript_4(script)
 							text.BorderColor3 = Color3.new(0, 0, 0)
 							text.BorderSizePixel = 0
 							text.Size = UDim2.new(1, 0, 1, 0)
-							text.Text = ""
-							text.Name = [[Name]]
-							
 							text.Text = v:FindFirstChild("tag").Text
+							text.Name = "NName"
 						else
-							v.Parent.Parent:FindFirstChild("NicknameEsp").Name.Text = v:FindFirstChild("tag").Text
+							v.Parent.Parent:FindFirstChild("NicknameEsp").NName.Text = v:FindFirstChild("tag").Text
 						end
 					end
 				end
