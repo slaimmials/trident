@@ -250,7 +250,7 @@ local function LocalScript_3(script)
 			if State then
 				for _,v in pairs(workspace:GetDescendants()) do
 					if v.Name == "Armor" then
-						if not v.Parent:FindFirstChild("Esp") and v:FindFirstChild("Head"):FindFirstChild("Nametag"):FindFirstChild("tag").Text ~= game.Players.LocalPlayer.Name then
+						if not v.Parent:FindFirstChild("Esp") and v.Parent:FindFirstChild("Head"):FindFirstChild("Nametag"):FindFirstChild("tag").Text ~= game.Players.LocalPlayer.Name then
 							local esp = essp:Clone()
 							esp.Parent = v.Parent
 							esp.Adornee = v.Parent
