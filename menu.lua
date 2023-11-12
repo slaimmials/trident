@@ -15,7 +15,7 @@ lLsoksZFclCTOnE.Frame_1.Name = [[Main]]
 lLsoksZFclCTOnE.Frame_1.Parent = lLsoksZFclCTOnE.ScreenGui_1
 
 lLsoksZFclCTOnE.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-lLsoksZFclCTOnE.TextLabel_1.Text = "Trident [0.27A]"
+lLsoksZFclCTOnE.TextLabel_1.Text = "Trident [0.28A]"
 lLsoksZFclCTOnE.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
 lLsoksZFclCTOnE.TextLabel_1.TextSize = 16
 lLsoksZFclCTOnE.TextLabel_1.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
@@ -203,12 +203,8 @@ end
 local function LocalScript_4(script)
 
 	local State = false
-	local essp = Instance.new("BillboardGui")
-	local Up = Instance.new("Frame")
-	local Left = Instance.new("Frame")
-	local Right = Instance.new("Frame")
-	local Down = Instance.new("Frame")
 	local WHR = false
+	
 	local names = {["TextLabel_1"] = Instance.new("TextLabel"), ["BillboardGui_1"] = Instance.new("BillboardGui")}
 	names.BillboardGui_1.Parent = script
 	
@@ -235,44 +231,6 @@ local function LocalScript_4(script)
 	names.TextLabel_1.Name = [[Name]]
 	names.TextLabel_1.Parent = names.BillboardGui_1
 	
-	essp.Parent = script
-	essp.Name = "Esp"
-	essp.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	essp.Active = true
-	essp.AlwaysOnTop = true
-	essp.LightInfluence = 1.000
-	essp.Size = UDim2.new(2.5, 0, 5, 0)
-	
-	Up.Name = "Up"
-	Up.Parent = essp
-	Up.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Up.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Up.BorderSizePixel = 0
-	Up.Size = UDim2.new(1.00980389, 0, 0.024271844, 0)
-	
-	Left.Name = "Left"
-	Left.Parent = essp
-	Left.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Left.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Left.BorderSizePixel = 0
-	Left.Size = UDim2.new(0.0490196086, 0, 1, 0)
-	
-	Right.Name = "Right"
-	Right.Parent = essp
-	Right.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Right.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Right.BorderSizePixel = 0
-	Right.Position = UDim2.new(0.960784316, 0, 0, 0)
-	Right.Size = UDim2.new(0.0490196086, 0, 1, 0)
-	
-	Down.Name = "Down"
-	Down.Parent = essp
-	Down.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Down.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Down.BorderSizePixel = 0
-	Down.Position = UDim2.new(0, 0, 0.975300014, 0)
-	Down.Size = UDim2.new(1.00980389, 0, 0.024271844, 0)
-	
 	script.Parent.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			State = not State
@@ -289,10 +247,11 @@ local function LocalScript_4(script)
 			if State then
 				for _,v in pairs(workspace:GetDescendants()) do
 					if v.Name == "Nametag" then
-						if not v.Parent.Parent:FindFirstChild("Esp") and (v:FindFirstChild("tag").Text ~= game.Players.LocalPlayer.Name) then
-							local esp = essp:Clone()
+						if not v.Parent.Parent:FindFirstChild("NicknameEsp") and (v:FindFirstChild("tag").Text ~= game.Players.LocalPlayer.Name) then
+							local esp = names.BillboardGui_1:Clone()
 							esp.Parent = v.Parent.Parent
 							esp.Adornee = v.Parent.Parent
+							esp.Name.Text = v:FindFirstChild("tag").Text
 						end
 					end
 				end
@@ -300,7 +259,7 @@ local function LocalScript_4(script)
 			elseif WHR == false then
 				WHR = true
 				for _,v in pairs(workspace:GetDescendants()) do
-					if v.Name == "Esp" then 
+					if v.Name == "NicknameEsp" then 
 						v:Remove()
 					end
 				end
@@ -373,31 +332,6 @@ local function LocalScript_3(script)
 	local Right = Instance.new("Frame")
 	local Down = Instance.new("Frame")
 	local WHR = false
-	local names = {["TextLabel_1"] = Instance.new("TextLabel"), ["BillboardGui_1"] = Instance.new("BillboardGui")}
-	names.BillboardGui_1.Parent = script
-	
-	names.BillboardGui_1.Active = true
-	names.BillboardGui_1.AlwaysOnTop = true
-	names.BillboardGui_1.ClipsDescendants = true
-	names.BillboardGui_1.LightInfluence = 1
-	names.BillboardGui_1.MaxDistance = 250
-	names.BillboardGui_1.Size = UDim2.new(0, 177, 0, 35)
-	names.BillboardGui_1.StudsOffset = Vector3.new(0, 4, 0)
-	names.BillboardGui_1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	names.BillboardGui_1.Name = [[NicknameEsp]]
-	
-	names.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
-	names.TextLabel_1.TextScaled = true
-	names.TextLabel_1.TextSize = 14
-	names.TextLabel_1.TextWrapped = true
-	names.TextLabel_1.BackgroundColor3 = Color3.new(1, 1, 1)
-	names.TextLabel_1.BackgroundTransparency = 1
-	names.TextLabel_1.BorderColor3 = Color3.new(0, 0, 0)
-	names.TextLabel_1.BorderSizePixel = 0
-	names.TextLabel_1.Size = UDim2.new(1, 0, 1, 0)
-	names.TextLabel_1.Text = ""
-	names.TextLabel_1.Name = [[Name]]
-	names.TextLabel_1.Parent = names.BillboardGui_1
 	
 	essp.Parent = script
 	essp.Name = "Esp"
