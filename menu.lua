@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local Trident = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
@@ -8,13 +13,11 @@ local PlayersESP = Instance.new("TextButton")
 local Visuals_2 = Instance.new("TextButton")
 local Player = Instance.new("TextButton")
 local Combat = Instance.new("TextButton")
-local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
 Trident.Name = "Trident"
-Trident.Parent = game.CoreGui
-Trident.Enabled = false
+Trident.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Trident.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
@@ -32,7 +35,7 @@ Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 342, 0, 19)
 Title.Font = Enum.Font.SourceSans
-Title.Text = "Trident [0.14A]"
+Title.Text = "Trident [0.15A]"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 16.000
 
@@ -115,19 +118,9 @@ Combat.Text = "Combat"
 Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
 Combat.TextSize = 16.000
 
-TextLabel.Parent = Trident
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.169444442, 0, 0.188857406, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
-
 -- Scripts:
 
-local function QVMPBB_fake_script() -- Close.LocalScript 
+local function NGQCIU_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.InputBegan:Connect(function(input)
@@ -136,8 +129,8 @@ local function QVMPBB_fake_script() -- Close.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QVMPBB_fake_script)()
-local function KZEPG_fake_script() -- Main.MoveScript 
+coroutine.wrap(NGQCIU_fake_script)()
+local function YBPLJ_fake_script() -- Main.MoveScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -188,8 +181,8 @@ local function KZEPG_fake_script() -- Main.MoveScript
 		end
 	end)
 end
-coroutine.wrap(KZEPG_fake_script)()
-local function IAVNR_fake_script() -- PlayersESP.LocalScript 
+coroutine.wrap(YBPLJ_fake_script)()
+local function WSDI_fake_script() -- PlayersESP.LocalScript 
 	local script = Instance.new('LocalScript', PlayersESP)
 
 	local State = false
@@ -335,8 +328,8 @@ local function IAVNR_fake_script() -- PlayersESP.LocalScript
 	
 	
 end
-coroutine.wrap(IAVNR_fake_script)()
-local function KCZX_fake_script() -- Visuals_2.LocalScript 
+coroutine.wrap(WSDI_fake_script)()
+local function SNCIAXB_fake_script() -- Visuals_2.LocalScript 
 	local script = Instance.new('LocalScript', Visuals_2)
 
 	local State = false
@@ -360,8 +353,8 @@ local function KCZX_fake_script() -- Visuals_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KCZX_fake_script)()
-local function MJZID_fake_script() -- Player.LocalScript 
+coroutine.wrap(SNCIAXB_fake_script)()
+local function ONHF_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	local State = false
@@ -385,8 +378,8 @@ local function MJZID_fake_script() -- Player.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MJZID_fake_script)()
-local function NDDCD_fake_script() -- Combat.LocalScript 
+coroutine.wrap(ONHF_fake_script)()
+local function LSBQLBZ_fake_script() -- Combat.LocalScript 
 	local script = Instance.new('LocalScript', Combat)
 
 	local State = false
@@ -410,14 +403,4 @@ local function NDDCD_fake_script() -- Combat.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NDDCD_fake_script)()
-local function UEEGPY_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
-
-	local m = game.Players.LocalPlayer:GetMouse()
-	
-	while wait() do
-		script.Parent.Text = tostring(m.X .. " " .. m.Y)
-	end
-end
-coroutine.wrap(UEEGPY_fake_script)()
+coroutine.wrap(LSBQLBZ_fake_script)()
