@@ -15,7 +15,7 @@ wKjfpDklMZmTZkS.Frame_1.Name = [[Main]]
 wKjfpDklMZmTZkS.Frame_1.Parent = wKjfpDklMZmTZkS.ScreenGui_1
 
 wKjfpDklMZmTZkS.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-wKjfpDklMZmTZkS.TextLabel_1.Text = "Trident [0.15A]"
+wKjfpDklMZmTZkS.TextLabel_1.Text = "Trident [0.16A]"
 wKjfpDklMZmTZkS.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
 wKjfpDklMZmTZkS.TextLabel_1.TextSize = 16
 wKjfpDklMZmTZkS.TextLabel_1.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
