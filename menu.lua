@@ -1,127 +1,129 @@
--- Gui to Lua
--- Version: 3.2
+local wKjfpDklMZmTZkS = {["Frame_1"] = Instance.new("Frame"), ["TextLabel_1"] = Instance.new("TextLabel"), ["TextButton_1"] = Instance.new("TextButton"), ["LocalScript_1"] = Instance.new("LocalScript"), ["LocalScript_2"] = Instance.new("LocalScript"), ["Frame_2"] = Instance.new("Frame"), ["Frame_3"] = Instance.new("Frame"), ["TextButton_2"] = Instance.new("TextButton"), ["LocalScript_3"] = Instance.new("LocalScript"), ["TextButton_3"] = Instance.new("TextButton"), ["LocalScript_4"] = Instance.new("LocalScript"), ["TextButton_4"] = Instance.new("TextButton"), ["LocalScript_5"] = Instance.new("LocalScript"), ["TextButton_5"] = Instance.new("TextButton"), ["LocalScript_6"] = Instance.new("LocalScript"), ["ScreenGui_1"] = Instance.new("ScreenGui")}
 
--- Instances:
+--
 
-local Trident = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
-local Close = Instance.new("TextButton")
-local Functions = Instance.new("Frame")
-local Visuals = Instance.new("Frame")
-local PlayersESP = Instance.new("TextButton")
-local Visuals_2 = Instance.new("TextButton")
-local Player = Instance.new("TextButton")
-local Combat = Instance.new("TextButton")
+wKjfpDklMZmTZkS.ScreenGui_1.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
---Properties:
+----------------------------------------------------------------------------------------------------
 
-Trident.Name = "Trident"
-Trident.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Trident.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+wKjfpDklMZmTZkS.Frame_1.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+wKjfpDklMZmTZkS.Frame_1.BorderColor3 = Color3.new(0, 0, 0)
+wKjfpDklMZmTZkS.Frame_1.BorderSizePixel = 0
+wKjfpDklMZmTZkS.Frame_1.Position = UDim2.new(0.129226744, 0, 0.271110147, 0)
+wKjfpDklMZmTZkS.Frame_1.Size = UDim2.new(0, 342, 0, 553)
+wKjfpDklMZmTZkS.Frame_1.Name = [[Main]]
+wKjfpDklMZmTZkS.Frame_1.Parent = wKjfpDklMZmTZkS.ScreenGui_1
 
-Main.Name = "Main"
-Main.Parent = Trident
-Main.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.129226744, 0, 0.271110147, 0)
-Main.Size = UDim2.new(0, 342, 0, 553)
+wKjfpDklMZmTZkS.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+wKjfpDklMZmTZkS.TextLabel_1.Text = "Trident [0.15A]"
+wKjfpDklMZmTZkS.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
+wKjfpDklMZmTZkS.TextLabel_1.TextSize = 16
+wKjfpDklMZmTZkS.TextLabel_1.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+wKjfpDklMZmTZkS.TextLabel_1.BorderColor3 = Color3.new(0, 0, 0)
+wKjfpDklMZmTZkS.TextLabel_1.BorderSizePixel = 0
+wKjfpDklMZmTZkS.TextLabel_1.Size = UDim2.new(0, 342, 0, 19)
+wKjfpDklMZmTZkS.TextLabel_1.Name = [[Title]]
+wKjfpDklMZmTZkS.TextLabel_1.Parent = wKjfpDklMZmTZkS.Frame_1
 
-Title.Name = "Title"
-Title.Parent = Main
-Title.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Title.BorderSizePixel = 0
-Title.Size = UDim2.new(0, 342, 0, 19)
-Title.Font = Enum.Font.SourceSans
-Title.Text = "Trident [0.15A]"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextSize = 16.000
+wKjfpDklMZmTZkS.TextButton_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+wKjfpDklMZmTZkS.TextButton_1.Text = [[x]]
+wKjfpDklMZmTZkS.TextButton_1.TextColor3 = Color3.new(1, 1, 1)
+wKjfpDklMZmTZkS.TextButton_1.TextSize = 17
+wKjfpDklMZmTZkS.TextButton_1.BackgroundColor3 = Color3.new(0.690196, 0.164706, 0.164706)
+wKjfpDklMZmTZkS.TextButton_1.BorderColor3 = Color3.new(0, 0, 0)
+wKjfpDklMZmTZkS.TextButton_1.BorderSizePixel = 0
+wKjfpDklMZmTZkS.TextButton_1.Position = UDim2.new(0.943121672, 0, 0, 0)
+wKjfpDklMZmTZkS.TextButton_1.Size = UDim2.new(0, 19, 0, 19)
+wKjfpDklMZmTZkS.TextButton_1.Name = [[Close]]
+wKjfpDklMZmTZkS.TextButton_1.Parent = wKjfpDklMZmTZkS.Frame_1
 
-Close.Name = "Close"
-Close.Parent = Main
-Close.BackgroundColor3 = Color3.fromRGB(176, 42, 42)
-Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Close.BorderSizePixel = 0
-Close.Position = UDim2.new(0.943121672, 0, 0, 0)
-Close.Size = UDim2.new(0, 19, 0, 19)
-Close.Font = Enum.Font.SourceSans
-Close.Text = "x"
-Close.TextColor3 = Color3.fromRGB(255, 255, 255)
-Close.TextSize = 17.000
+wKjfpDklMZmTZkS.LocalScript_1.Parent = wKjfpDklMZmTZkS.TextButton_1
 
-Functions.Name = "Functions"
-Functions.Parent = Main
-Functions.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Functions.BackgroundTransparency = 1.000
-Functions.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Functions.BorderSizePixel = 0
-Functions.Position = UDim2.new(0, 0, 0.0687160939, 0)
-Functions.Size = UDim2.new(1, 0, 0.930999994, 0)
+wKjfpDklMZmTZkS.LocalScript_2.Name = [[MoveScript]]
+wKjfpDklMZmTZkS.LocalScript_2.Parent = wKjfpDklMZmTZkS.Frame_1
 
-Visuals.Name = "Visuals"
-Visuals.Parent = Functions
-Visuals.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Visuals.BackgroundTransparency = 1.000
-Visuals.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Visuals.BorderSizePixel = 0
-Visuals.Size = UDim2.new(1, 0, 1, 0)
-Visuals.Visible = false
+wKjfpDklMZmTZkS.Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
+wKjfpDklMZmTZkS.Frame_2.BackgroundTransparency = 1
+wKjfpDklMZmTZkS.Frame_2.BorderColor3 = Color3.new(0, 0, 0)
+wKjfpDklMZmTZkS.Frame_2.BorderSizePixel = 0
+wKjfpDklMZmTZkS.Frame_2.Position = UDim2.new(0, 0, 0.0687160939, 0)
+wKjfpDklMZmTZkS.Frame_2.Size = UDim2.new(1, 0, 0.930999994, 0)
+wKjfpDklMZmTZkS.Frame_2.Name = [[Functions]]
+wKjfpDklMZmTZkS.Frame_2.Parent = wKjfpDklMZmTZkS.Frame_1
 
-PlayersESP.Name = "PlayersESP"
-PlayersESP.Parent = Visuals
-PlayersESP.BackgroundColor3 = Color3.fromRGB(135, 34, 34)
-PlayersESP.BorderColor3 = Color3.fromRGB(47, 47, 47)
-PlayersESP.BorderSizePixel = 3
-PlayersESP.Position = UDim2.new(0.0584795326, 0, 0.0388467945, 0)
-PlayersESP.Size = UDim2.new(0, 20, 0, 20)
-PlayersESP.Font = Enum.Font.SourceSans
-PlayersESP.Text = "         Players ESP"
-PlayersESP.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlayersESP.TextSize = 20.000
-PlayersESP.TextXAlignment = Enum.TextXAlignment.Left
+wKjfpDklMZmTZkS.Frame_3.BackgroundColor3 = Color3.new(1, 1, 1)
+wKjfpDklMZmTZkS.Frame_3.BackgroundTransparency = 1
+wKjfpDklMZmTZkS.Frame_3.BorderColor3 = Color3.new(0, 0, 0)
+wKjfpDklMZmTZkS.Frame_3.BorderSizePixel = 0
+wKjfpDklMZmTZkS.Frame_3.Size = UDim2.new(1, 0, 1, 0)
+wKjfpDklMZmTZkS.Frame_3.Visible = false
+wKjfpDklMZmTZkS.Frame_3.Name = [[Visuals]]
+wKjfpDklMZmTZkS.Frame_3.Parent = wKjfpDklMZmTZkS.Frame_2
 
-Visuals_2.Name = "Visuals"
-Visuals_2.Parent = Main
-Visuals_2.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-Visuals_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Visuals_2.BorderSizePixel = 0
-Visuals_2.Position = UDim2.new(0, 0, 0.0340000018, 0)
-Visuals_2.Size = UDim2.new(0.335000008, 0, 0, 19)
-Visuals_2.Font = Enum.Font.SourceSans
-Visuals_2.Text = "Visuals"
-Visuals_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Visuals_2.TextSize = 16.000
+wKjfpDklMZmTZkS.TextButton_2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+wKjfpDklMZmTZkS.TextButton_2.Text = [[         Players ESP]]
+wKjfpDklMZmTZkS.TextButton_2.TextColor3 = Color3.new(1, 1, 1)
+wKjfpDklMZmTZkS.TextButton_2.TextSize = 20
+wKjfpDklMZmTZkS.TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
+wKjfpDklMZmTZkS.TextButton_2.BackgroundColor3 = Color3.new(0.529412, 0.133333, 0.133333)
+wKjfpDklMZmTZkS.TextButton_2.BorderColor3 = Color3.new(0.184314, 0.184314, 0.184314)
+wKjfpDklMZmTZkS.TextButton_2.BorderSizePixel = 3
+wKjfpDklMZmTZkS.TextButton_2.Position = UDim2.new(0.0584795326, 0, 0.0388467945, 0)
+wKjfpDklMZmTZkS.TextButton_2.Size = UDim2.new(0, 20, 0, 20)
+wKjfpDklMZmTZkS.TextButton_2.Name = [[PlayersESP]]
+wKjfpDklMZmTZkS.TextButton_2.Parent = wKjfpDklMZmTZkS.Frame_3
 
-Player.Name = "Player"
-Player.Parent = Main
-Player.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Player.BorderSizePixel = 0
-Player.Position = UDim2.new(0.333000004, 0, 0.0340000018, 0)
-Player.Size = UDim2.new(0.335000008, 0, 0, 19)
-Player.Font = Enum.Font.SourceSans
-Player.Text = "Player"
-Player.TextColor3 = Color3.fromRGB(255, 255, 255)
-Player.TextSize = 16.000
+wKjfpDklMZmTZkS.LocalScript_3.Parent = wKjfpDklMZmTZkS.TextButton_2
 
-Combat.Name = "Combat"
-Combat.Parent = Main
-Combat.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-Combat.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Combat.BorderSizePixel = 0
-Combat.Position = UDim2.new(0.661000013, 0, 0.0340000018, 0)
-Combat.Size = UDim2.new(0.335000008, 0, 0, 19)
-Combat.Font = Enum.Font.SourceSans
-Combat.Text = "Combat"
-Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
-Combat.TextSize = 16.000
+wKjfpDklMZmTZkS.TextButton_3.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+wKjfpDklMZmTZkS.TextButton_3.Text = [[Visuals]]
+wKjfpDklMZmTZkS.TextButton_3.TextColor3 = Color3.new(1, 1, 1)
+wKjfpDklMZmTZkS.TextButton_3.TextSize = 16
+wKjfpDklMZmTZkS.TextButton_3.BackgroundColor3 = Color3.new(0.215686, 0.215686, 0.215686)
+wKjfpDklMZmTZkS.TextButton_3.BorderColor3 = Color3.new(0, 0, 0)
+wKjfpDklMZmTZkS.TextButton_3.BorderSizePixel = 0
+wKjfpDklMZmTZkS.TextButton_3.Position = UDim2.new(0, 0, 0.0340000018, 0)
+wKjfpDklMZmTZkS.TextButton_3.Size = UDim2.new(0.335000008, 0, 0, 19)
+wKjfpDklMZmTZkS.TextButton_3.Name = [[Visuals]]
+wKjfpDklMZmTZkS.TextButton_3.Parent = wKjfpDklMZmTZkS.Frame_1
 
--- Scripts:
+wKjfpDklMZmTZkS.LocalScript_4.Parent = wKjfpDklMZmTZkS.TextButton_3
 
-local function NGQCIU_fake_script() -- Close.LocalScript 
-	local script = Instance.new('LocalScript', Close)
+wKjfpDklMZmTZkS.TextButton_4.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+wKjfpDklMZmTZkS.TextButton_4.Text = [[Player]]
+wKjfpDklMZmTZkS.TextButton_4.TextColor3 = Color3.new(1, 1, 1)
+wKjfpDklMZmTZkS.TextButton_4.TextSize = 16
+wKjfpDklMZmTZkS.TextButton_4.BackgroundColor3 = Color3.new(0.215686, 0.215686, 0.215686)
+wKjfpDklMZmTZkS.TextButton_4.BorderColor3 = Color3.new(0, 0, 0)
+wKjfpDklMZmTZkS.TextButton_4.BorderSizePixel = 0
+wKjfpDklMZmTZkS.TextButton_4.Position = UDim2.new(0.333000004, 0, 0.0340000018, 0)
+wKjfpDklMZmTZkS.TextButton_4.Size = UDim2.new(0.335000008, 0, 0, 19)
+wKjfpDklMZmTZkS.TextButton_4.Name = [[Player]]
+wKjfpDklMZmTZkS.TextButton_4.Parent = wKjfpDklMZmTZkS.Frame_1
+
+wKjfpDklMZmTZkS.LocalScript_5.Parent = wKjfpDklMZmTZkS.TextButton_4
+
+wKjfpDklMZmTZkS.TextButton_5.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+wKjfpDklMZmTZkS.TextButton_5.Text = [[Combat]]
+wKjfpDklMZmTZkS.TextButton_5.TextColor3 = Color3.new(1, 1, 1)
+wKjfpDklMZmTZkS.TextButton_5.TextSize = 16
+wKjfpDklMZmTZkS.TextButton_5.BackgroundColor3 = Color3.new(0.215686, 0.215686, 0.215686)
+wKjfpDklMZmTZkS.TextButton_5.BorderColor3 = Color3.new(0, 0, 0)
+wKjfpDklMZmTZkS.TextButton_5.BorderSizePixel = 0
+wKjfpDklMZmTZkS.TextButton_5.Position = UDim2.new(0.661000013, 0, 0.0340000018, 0)
+wKjfpDklMZmTZkS.TextButton_5.Size = UDim2.new(0.335000008, 0, 0, 19)
+wKjfpDklMZmTZkS.TextButton_5.Name = [[Combat]]
+wKjfpDklMZmTZkS.TextButton_5.Parent = wKjfpDklMZmTZkS.Frame_1
+
+wKjfpDklMZmTZkS.LocalScript_6.Parent = wKjfpDklMZmTZkS.TextButton_5
+
+wKjfpDklMZmTZkS.ScreenGui_1.IgnoreGuiInset = true
+wKjfpDklMZmTZkS.ScreenGui_1.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+wKjfpDklMZmTZkS.ScreenGui_1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+wKjfpDklMZmTZkS.ScreenGui_1.Name = [[Trident]]
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_1(script)
 
 	script.Parent.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
@@ -129,61 +131,62 @@ local function NGQCIU_fake_script() -- Close.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NGQCIU_fake_script)()
-local function YBPLJ_fake_script() -- Main.MoveScript 
-	local script = Instance.new('LocalScript', Main)
 
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local Dragging = nil
-	local dragSpeed = 0.1
-	local dragStart = nil
-	local startPos = nil
-	
-	UIS.InputBegan:Connect(function(input, typing)
-		if typing then
-			return
-		end
-	
-		if input.KeyCode == Enum.KeyCode.F12 then
-			script.Parent.Visible = not script.Parent.Visible
-		end
-	end)
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_4(script)
+
+	local State = false
+	script.Parent.InputBegan:Connect(function(input) 
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			Dragging = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-					Dragging = false
+			State = not State
+			if State then
+				for _,v in pairs(script.Parent.Parent.Functions:GetChildren()) do
+					if v.Name ~= script.Parent.Name then
+						v.Visible = false
+					else
+						v.Visible = true
+					end
 				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
+				script.Parent.Parent.Player.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+				script.Parent.Parent.Combat.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+				script.Parent.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+			else
+				script.Parent.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 			end
 		end
 	end)
 end
-coroutine.wrap(YBPLJ_fake_script)()
-local function WSDI_fake_script() -- PlayersESP.LocalScript 
-	local script = Instance.new('LocalScript', PlayersESP)
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_5(script)
+
+	local State = false
+	script.Parent.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			State = not State
+			if State then
+				for _,v in pairs(script.Parent.Parent.Functions:GetChildren()) do
+					if v.Name ~= script.Parent.Name then
+						v.Visible = false
+					else
+						v.Visible = true
+					end
+				end
+				script.Parent.Parent.Visuals.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+				script.Parent.Parent.Combat.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+				script.Parent.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+			else
+				script.Parent.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+			end
+		end
+	end)
+end
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_3(script)
 
 	local State = false
 	local essp = Instance.new("BillboardGui")
@@ -328,34 +331,63 @@ local function WSDI_fake_script() -- PlayersESP.LocalScript
 	
 	
 end
-coroutine.wrap(WSDI_fake_script)()
-local function SNCIAXB_fake_script() -- Visuals_2.LocalScript 
-	local script = Instance.new('LocalScript', Visuals_2)
 
-	local State = false
-	script.Parent.InputBegan:Connect(function(input) 
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_2(script)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local Dragging = nil
+	local dragSpeed = 0.1
+	local dragStart = nil
+	local startPos = nil
+	
+	UIS.InputBegan:Connect(function(input, typing)
+		if typing then
+			return
+		end
+	
+		if input.KeyCode == Enum.KeyCode.F12 then
+			script.Parent.Visible = not script.Parent.Visible
+		end
+	end)
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			State = not State
-			if State then
-				for _,v in pairs(script.Parent.Parent.Functions:GetChildren()) do
-					if v.Name ~= script.Parent.Name then
-						v.Visible = false
-					else
-						v.Visible = true
-					end
+			dragToggle = true
+			Dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+					Dragging = false
 				end
-				script.Parent.Parent.Player.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-				script.Parent.Parent.Combat.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-				script.Parent.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-			else
-				script.Parent.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
 			end
 		end
 	end)
 end
-coroutine.wrap(SNCIAXB_fake_script)()
-local function ONHF_fake_script() -- Player.LocalScript 
-	local script = Instance.new('LocalScript', Player)
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_6(script)
 
 	local State = false
 	script.Parent.InputBegan:Connect(function(input)
@@ -369,31 +401,6 @@ local function ONHF_fake_script() -- Player.LocalScript
 						v.Visible = true
 					end
 				end
-				script.Parent.Parent.Visuals.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-				script.Parent.Parent.Combat.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-				script.Parent.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-			else
-				script.Parent.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-			end
-		end
-	end)
-end
-coroutine.wrap(ONHF_fake_script)()
-local function LSBQLBZ_fake_script() -- Combat.LocalScript 
-	local script = Instance.new('LocalScript', Combat)
-
-	local State = false
-	script.Parent.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			State = not State
-			if State then
-				for _,v in pairs(script.Parent.Parent.Functions:GetChildren()) do
-					if v.Name ~= script.Parent.Name then
-						v.Visible = false
-					else
-						v.Visible = true
-					end
-				end
 				script.Parent.Parent.Player.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 				script.Parent.Parent.Visuals.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 				script.Parent.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
@@ -403,4 +410,12 @@ local function LSBQLBZ_fake_script() -- Combat.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LSBQLBZ_fake_script)()
+
+----------------------------------------------------------------------------------------------------
+
+coroutine.wrap(LocalScript_1)(wKjfpDklMZmTZkS.LocalScript_1)
+coroutine.wrap(LocalScript_4)(wKjfpDklMZmTZkS.LocalScript_4)
+coroutine.wrap(LocalScript_5)(wKjfpDklMZmTZkS.LocalScript_5)
+coroutine.wrap(LocalScript_3)(wKjfpDklMZmTZkS.LocalScript_3)
+coroutine.wrap(LocalScript_2)(wKjfpDklMZmTZkS.LocalScript_2)
+coroutine.wrap(LocalScript_6)(wKjfpDklMZmTZkS.LocalScript_6)
