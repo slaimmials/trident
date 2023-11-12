@@ -17,7 +17,7 @@ local Combat = Instance.new("TextButton")
 --Properties:
 
 Trident.Name = "Trident"
-Trident.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Trident.Parent = game.CoreGui
 Trident.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
