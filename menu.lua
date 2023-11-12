@@ -32,7 +32,7 @@ Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 342, 0, 19)
 Title.Font = Enum.Font.SourceSans
-Title.Text = "Trident [0.13A]"
+Title.Text = "Trident [0.14A]"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 16.000
 
