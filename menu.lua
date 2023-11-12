@@ -2,7 +2,7 @@ local wKjfpDklMZmTZkS = {["Frame_1"] = Instance.new("Frame"), ["TextLabel_1"] = 
 
 --
 
-wKjfpDklMZmTZkS.ScreenGui_1.Parent = game.StarterGui
+wKjfpDklMZmTZkS.ScreenGui_1.Parent = game.CoreGui
 
 ----------------------------------------------------------------------------------------------------
 
