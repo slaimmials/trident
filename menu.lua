@@ -15,7 +15,7 @@ frYNDWPYhXPdIxX.Frame_1.Name = [[Main]]
 frYNDWPYhXPdIxX.Frame_1.Parent = frYNDWPYhXPdIxX.ScreenGui_1
 
 frYNDWPYhXPdIxX.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextLabel_1.Text = "Trident [0.32A]"
+frYNDWPYhXPdIxX.TextLabel_1.Text = "Trident [0.33A]"
 frYNDWPYhXPdIxX.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextLabel_1.TextSize = 16
 frYNDWPYhXPdIxX.TextLabel_1.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
@@ -205,7 +205,6 @@ local function LocalScript_4(script)
 	local State = false
 	local WHR = false
 	local essp = Instance.new("BillboardGui", script)
-	local text = Instance.new("TextLabel", essp)
 	
 	essp.Active = true
 	essp.AlwaysOnTop = true
@@ -216,18 +215,6 @@ local function LocalScript_4(script)
 	essp.StudsOffset = Vector3.new(0, 4, 0)
 	essp.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	essp.Name = [[NicknameEsp]]
-	
-	text.TextColor3 = Color3.new(1, 1, 1)
-	text.TextScaled = true
-	text.TextSize = 14
-	text.TextWrapped = true
-	text.BackgroundColor3 = Color3.new(1, 1, 1)
-	text.BackgroundTransparency = 1
-	text.BorderColor3 = Color3.new(0, 0, 0)
-	text.BorderSizePixel = 0
-	text.Size = UDim2.new(1, 0, 1, 0)
-	text.Text = ""
-	text.Name = [[Name]]
 	
 	script.Parent.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
@@ -249,7 +236,21 @@ local function LocalScript_4(script)
 							local esp = essp:Clone()
 							esp.Parent = v.Parent.Parent
 							esp.Adornee = v.Parent.Parent
-							esp.Name.Text = v:FindFirstChild("tag").Text
+							
+							local text = Instance.new("TextLabel", esp)
+							text.TextColor3 = Color3.new(1, 1, 1)
+							text.TextScaled = true
+							text.TextSize = 14
+							text.TextWrapped = true
+							text.BackgroundColor3 = Color3.new(1, 1, 1)
+							text.BackgroundTransparency = 1
+							text.BorderColor3 = Color3.new(0, 0, 0)
+							text.BorderSizePixel = 0
+							text.Size = UDim2.new(1, 0, 1, 0)
+							text.Text = ""
+							text.Name = [[Name]]
+							
+							text.Text = v:FindFirstChild("tag").Text
 						else
 							v.Parent.Parent:FindFirstChild("NicknameEsp").Name.Text = v:FindFirstChild("tag").Text
 						end
