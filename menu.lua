@@ -115,15 +115,15 @@ Combat.TextSize = 16.000
 
 -- Scripts:
 
-local function NSNEW_fake_script() -- Close.LocalScript 
+local function OWCC_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.TouchTap:Connect(function()
 		script.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(NSNEW_fake_script)()
-local function XOTMSKJ_fake_script() -- Main.MoveScript 
+coroutine.wrap(OWCC_fake_script)()
+local function DAIZ_fake_script() -- Main.MoveScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -174,8 +174,8 @@ local function XOTMSKJ_fake_script() -- Main.MoveScript
 		end
 	end)
 end
-coroutine.wrap(XOTMSKJ_fake_script)()
-local function UEQDJK_fake_script() -- PlayersESP.LocalScript 
+coroutine.wrap(DAIZ_fake_script)()
+local function EAWPVBE_fake_script() -- PlayersESP.LocalScript 
 	local script = Instance.new('LocalScript', PlayersESP)
 
 	local State = false
@@ -319,8 +319,8 @@ local function UEQDJK_fake_script() -- PlayersESP.LocalScript
 	
 	
 end
-coroutine.wrap(UEQDJK_fake_script)()
-local function RWIU_fake_script() -- Visuals_2.LocalScript 
+coroutine.wrap(EAWPVBE_fake_script)()
+local function EEEDLVU_fake_script() -- Visuals_2.LocalScript 
 	local script = Instance.new('LocalScript', Visuals_2)
 
 	local State = false
@@ -342,8 +342,8 @@ local function RWIU_fake_script() -- Visuals_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RWIU_fake_script)()
-local function FHETEQL_fake_script() -- Player.LocalScript 
+coroutine.wrap(EEEDLVU_fake_script)()
+local function VEZWGTQ_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	local State = false
@@ -365,8 +365,8 @@ local function FHETEQL_fake_script() -- Player.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FHETEQL_fake_script)()
-local function NHFL_fake_script() -- Combat.LocalScript 
+coroutine.wrap(VEZWGTQ_fake_script)()
+local function IGLSUXB_fake_script() -- Combat.LocalScript 
 	local script = Instance.new('LocalScript', Combat)
 
 	local State = false
@@ -388,4 +388,4 @@ local function NHFL_fake_script() -- Combat.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NHFL_fake_script)()
+coroutine.wrap(IGLSUXB_fake_script)()
