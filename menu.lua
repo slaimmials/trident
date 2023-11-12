@@ -15,7 +15,7 @@ wKjfpDklMZmTZkS.Frame_1.Name = [[Main]]
 wKjfpDklMZmTZkS.Frame_1.Parent = wKjfpDklMZmTZkS.ScreenGui_1
 
 wKjfpDklMZmTZkS.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-wKjfpDklMZmTZkS.TextLabel_1.Text = "Trident [0.25A]"
+wKjfpDklMZmTZkS.TextLabel_1.Text = "Trident [0.26A]"
 wKjfpDklMZmTZkS.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
 wKjfpDklMZmTZkS.TextLabel_1.TextSize = 16
 wKjfpDklMZmTZkS.TextLabel_1.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
@@ -249,12 +249,11 @@ local function LocalScript_3(script)
 		pcall(function()
 			if State then
 				for _,v in pairs(workspace:GetDescendants()) do
-					if v.Name == "Armor" then
-						print(v.Parent:FindFirstChild("Head"):FindFirstChild("Nametag"):FindFirstChild("tag").Text)
-						if (not v.Parent:FindFirstChild("Esp")) and (v.Parent:FindFirstChild("Head"):FindFirstChild("Nametag"):FindFirstChild("tag").Text ~= game.Players.LocalPlayer.Name) then
+					if v.Name == "Nametag" then
+						if not v.Parent.Parent:FindFirstChild("Esp") and (v:FindFirstChild("tag").Text ~= game.Players.LocalPlayer.Name) then
 							local esp = essp:Clone()
-							esp.Parent = v.Parent
-							esp.Adornee = v.Parent
+							esp.Parent = v.Parent.Parent
+							esp.Adornee = v.Parent.Parent
 						end
 					end
 				end
