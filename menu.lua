@@ -15,7 +15,7 @@ frYNDWPYhXPdIxX.Frame_1.Name = "Main"
 frYNDWPYhXPdIxX.Frame_1.Parent = frYNDWPYhXPdIxX.ScreenGui_1
 
 frYNDWPYhXPdIxX.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextLabel_1.Text = "Trident [0.34A]"
+frYNDWPYhXPdIxX.TextLabel_1.Text = "Trident [0.35A]"
 frYNDWPYhXPdIxX.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextLabel_1.TextSize = 16
 frYNDWPYhXPdIxX.TextLabel_1.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
@@ -247,7 +247,7 @@ local function LocalScript_4(script)
 							text.BorderColor3 = Color3.new(0, 0, 0)
 							text.BorderSizePixel = 0
 							text.Size = UDim2.new(1, 0, 1, 0)
-							text.Text = v:FindFirstChild("tag").Text
+							text.Text = "Not loaded player"
 							text.Name = "NName"
 						else
 							v.Parent.Parent:FindFirstChild("NicknameEsp").NName.Text = v:FindFirstChild("tag").Text
