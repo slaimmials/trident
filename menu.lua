@@ -1,3 +1,4 @@
+StarterGui:SetCore("DevConsoleVisible", true)
 local frYNDWPYhXPdIxX = {["Frame_1"] = Instance.new("Frame"), ["TextLabel_1"] = Instance.new("TextLabel"), ["TextButton_1"] = Instance.new("TextButton"), ["LocalScript_1"] = Instance.new("LocalScript"), ["LocalScript_2"] = Instance.new("LocalScript"), ["Frame_2"] = Instance.new("Frame"), ["Frame_3"] = Instance.new("Frame"), ["TextButton_2"] = Instance.new("TextButton"), ["LocalScript_3"] = Instance.new("LocalScript"), ["TextButton_3"] = Instance.new("TextButton"), ["LocalScript_4"] = Instance.new("LocalScript"), ["TextButton_4"] = Instance.new("TextButton"), ["LocalScript_5"] = Instance.new("LocalScript"), ["TextButton_5"] = Instance.new("TextButton"), ["LocalScript_6"] = Instance.new("LocalScript"), ["TextButton_6"] = Instance.new("TextButton"), ["LocalScript_7"] = Instance.new("LocalScript"), ["TextButton_7"] = Instance.new("TextButton"), ["LocalScript_8"] = Instance.new("LocalScript"), ["TextButton_8"] = Instance.new("TextButton"), ["LocalScript_9"] = Instance.new("LocalScript"), ["ScreenGui_1"] = Instance.new("ScreenGui")}
 
 frYNDWPYhXPdIxX.ScreenGui_1.Parent = game.CoreGui
@@ -13,7 +14,7 @@ frYNDWPYhXPdIxX.Frame_1.Name = "Main"
 frYNDWPYhXPdIxX.Frame_1.Parent = frYNDWPYhXPdIxX.ScreenGui_1
 
 frYNDWPYhXPdIxX.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextLabel_1.Text = "Trident [0.38A]"
+frYNDWPYhXPdIxX.TextLabel_1.Text = "Trident [Debugging]"
 frYNDWPYhXPdIxX.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextLabel_1.TextSize = 16
 frYNDWPYhXPdIxX.TextLabel_1.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
@@ -580,4 +581,4 @@ coroutine.wrap(LocalScript_7)(frYNDWPYhXPdIxX.LocalScript_7)
 coroutine.wrap(LocalScript_8)(frYNDWPYhXPdIxX.LocalScript_8)
 coroutine.wrap(LocalScript_9)(frYNDWPYhXPdIxX.LocalScript_9)
 
---StarterGui:SetCore("DevConsoleVisible", true)
+
