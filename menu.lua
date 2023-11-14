@@ -1,6 +1,4 @@
-local frYNDWPYhXPdIxX = {["Frame_1"] = Instance.new("Frame"), ["TextLabel_1"] = Instance.new("TextLabel"), ["TextButton_1"] = Instance.new("TextButton"), ["LocalScript_1"] = Instance.new("LocalScript"), ["LocalScript_2"] = Instance.new("LocalScript"), ["Frame_2"] = Instance.new("Frame"), ["Frame_3"] = Instance.new("Frame"), ["TextButton_2"] = Instance.new("TextButton"), ["LocalScript_3"] = Instance.new("LocalScript"), ["TextButton_3"] = Instance.new("TextButton"), ["LocalScript_4"] = Instance.new("LocalScript"), ["TextButton_4"] = Instance.new("TextButton"), ["LocalScript_5"] = Instance.new("LocalScript"), ["TextButton_5"] = Instance.new("TextButton"), ["LocalScript_6"] = Instance.new("LocalScript"), ["TextButton_6"] = Instance.new("TextButton"), ["LocalScript_7"] = Instance.new("LocalScript"), ["ScreenGui_1"] = Instance.new("ScreenGui")}
-
---
+local frYNDWPYhXPdIxX = {["Frame_1"] = Instance.new("Frame"), ["TextLabel_1"] = Instance.new("TextLabel"), ["TextButton_1"] = Instance.new("TextButton"), ["LocalScript_1"] = Instance.new("LocalScript"), ["LocalScript_2"] = Instance.new("LocalScript"), ["Frame_2"] = Instance.new("Frame"), ["Frame_3"] = Instance.new("Frame"), ["TextButton_2"] = Instance.new("TextButton"), ["LocalScript_3"] = Instance.new("LocalScript"), ["TextButton_3"] = Instance.new("TextButton"), ["LocalScript_4"] = Instance.new("LocalScript"), ["TextButton_4"] = Instance.new("TextButton"), ["LocalScript_5"] = Instance.new("LocalScript"), ["TextButton_5"] = Instance.new("TextButton"), ["LocalScript_6"] = Instance.new("LocalScript"), ["TextButton_6"] = Instance.new("TextButton"), ["LocalScript_7"] = Instance.new("LocalScript"), ["TextButton_7"] = Instance.new("TextButton"), ["LocalScript_8"] = Instance.new("LocalScript"), ["TextButton_8"] = Instance.new("TextButton"), ["LocalScript_9"] = Instance.new("LocalScript"), ["ScreenGui_1"] = Instance.new("ScreenGui")}
 
 frYNDWPYhXPdIxX.ScreenGui_1.Parent = game.CoreGui
 
@@ -15,7 +13,7 @@ frYNDWPYhXPdIxX.Frame_1.Name = "Main"
 frYNDWPYhXPdIxX.Frame_1.Parent = frYNDWPYhXPdIxX.ScreenGui_1
 
 frYNDWPYhXPdIxX.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-frYNDWPYhXPdIxX.TextLabel_1.Text = "Trident [0.36A]"
+frYNDWPYhXPdIxX.TextLabel_1.Text = "Trident [0.38A]"
 frYNDWPYhXPdIxX.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
 frYNDWPYhXPdIxX.TextLabel_1.TextSize = 16
 frYNDWPYhXPdIxX.TextLabel_1.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
@@ -130,6 +128,36 @@ frYNDWPYhXPdIxX.TextButton_6.Name = "Combat"
 frYNDWPYhXPdIxX.TextButton_6.Parent = frYNDWPYhXPdIxX.Frame_1
 
 frYNDWPYhXPdIxX.LocalScript_7.Parent = frYNDWPYhXPdIxX.TextButton_6
+
+frYNDWPYhXPdIxX.TextButton_7.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+frYNDWPYhXPdIxX.TextButton_7.Text = "         Ore Nametags"
+frYNDWPYhXPdIxX.TextButton_7.TextColor3 = Color3.new(1, 1, 1)
+frYNDWPYhXPdIxX.TextButton_7.TextSize = 20
+frYNDWPYhXPdIxX.TextButton_7.TextXAlignment = Enum.TextXAlignment.Left
+frYNDWPYhXPdIxX.TextButton_7.BackgroundColor3 = Color3.new(0.529412, 0.133333, 0.133333)
+frYNDWPYhXPdIxX.TextButton_7.BorderColor3 = Color3.new(0.184314, 0.184314, 0.184314)
+frYNDWPYhXPdIxX.TextButton_7.BorderSizePixel = 3
+frYNDWPYhXPdIxX.TextButton_7.Position = UDim2.new(0.0584795326, 0, 0.1670412095, 0)
+frYNDWPYhXPdIxX.TextButton_7.Size = UDim2.new(0, 20, 0, 20)
+frYNDWPYhXPdIxX.TextButton_7.Name = "OreTags"
+frYNDWPYhXPdIxX.TextButton_7.Parent = frYNDWPYhXPdIxX.Frame_3
+
+frYNDWPYhXPdIxX.LocalScript_8.Parent = frYNDWPYhXPdIxX.TextButton_7
+
+frYNDWPYhXPdIxX.TextButton_8.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+frYNDWPYhXPdIxX.TextButton_8.Text = "         Fullbright"
+frYNDWPYhXPdIxX.TextButton_8.TextColor3 = Color3.new(1, 1, 1)
+frYNDWPYhXPdIxX.TextButton_8.TextSize = 20
+frYNDWPYhXPdIxX.TextButton_8.TextXAlignment = Enum.TextXAlignment.Left
+frYNDWPYhXPdIxX.TextButton_8.BackgroundColor3 = Color3.new(0.529412, 0.133333, 0.133333)
+frYNDWPYhXPdIxX.TextButton_8.BorderColor3 = Color3.new(0.184314, 0.184314, 0.184314)
+frYNDWPYhXPdIxX.TextButton_8.BorderSizePixel = 3
+frYNDWPYhXPdIxX.TextButton_8.Position = UDim2.new(0.5, 0, 0.0388467945, 0)
+frYNDWPYhXPdIxX.TextButton_8.Size = UDim2.new(0, 20, 0, 20)
+frYNDWPYhXPdIxX.TextButton_8.Name = "Fullbright"
+frYNDWPYhXPdIxX.TextButton_8.Parent = frYNDWPYhXPdIxX.Frame_3
+
+frYNDWPYhXPdIxX.LocalScript_9.Parent = frYNDWPYhXPdIxX.TextButton_8
 
 frYNDWPYhXPdIxX.ScreenGui_1.IgnoreGuiInset = true
 frYNDWPYhXPdIxX.ScreenGui_1.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
@@ -247,6 +275,7 @@ local function LocalScript_4(script)
 							text.BorderColor3 = Color3.new(0, 0, 0)
 							text.BorderSizePixel = 0
 							text.Size = UDim2.new(1, 0, 1, 0)
+							--esp.Parent:FindFirstChild("HumanoidRootPart").CFrame = 
 							text.Text = "player"
 							text.Name = "NName"
 						else
@@ -446,6 +475,101 @@ end
 
 ----------------------------------------------------------------------------------------------------
 
+local function LocalScript_8(script)
+
+	local State = false
+	local WHR = false
+	local essp = Instance.new("BillboardGui", script)
+	
+	essp.Active = true
+	essp.AlwaysOnTop = true
+	essp.ClipsDescendants = true
+	essp.LightInfluence = 1
+	essp.MaxDistance = 250
+	essp.Size = UDim2.new(0, 177, 0, 35)
+	essp.StudsOffset = Vector3.new(0, 4, 0)
+	essp.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	essp.Name = "OreNametag"
+	
+	local text = Instance.new("TextLabel", essp)
+	text.TextColor3 = Color3.new(1, 1, 1)
+	text.TextScaled = true
+	text.TextSize = 14
+	text.TextWrapped = true
+	text.BackgroundColor3 = Color3.new(1, 1, 1)
+	text.BackgroundTransparency = 1
+	text.BorderColor3 = Color3.new(0, 0, 0)
+	text.BorderSizePixel = 0
+	text.Size = UDim2.new(1, 0, 1, 0)
+	text.Text = "ore idk"
+	text.Name = "NName"
+	
+	script.Parent.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			State = not State
+			if State then
+				script.Parent.BackgroundColor3 = Color3.fromRGB(38, 135, 33)
+			else
+				script.Parent.BackgroundColor3 = Color3.fromRGB(135, 34, 34)
+			end
+		end
+	end)
+	
+	while wait(0.1) do
+		pcall(function()
+			if State then
+				for _,v in pairs(workspace:GetDescendants()) do
+					if v.Name == "Placement" and v.Color = Color3.fromRGB(160, 132, 79) and v.ClassName == "Part" then
+						if not v.Parent:FindFirstChild("OreNametag") then
+							local esp = essp:Clone()
+							esp.Parent = v.Parent
+							esp.Adornee = v.Parent
+							esp.NName.Text = "Iron"
+						end
+					end
+				end
+				WHR = false
+			elseif WHR == false then
+				WHR = true
+				for _,v in pairs(workspace:GetDescendants()) do
+					if v.Name == "OreNametag" then 
+						v:Remove()
+					end
+				end
+			end
+		end)
+	end
+end
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_9(script)
+
+	local State = false
+	
+	script.Parent.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			State = not State
+			if State then
+				script.Parent.BackgroundColor3 = Color3.fromRGB(38, 135, 33)
+			else
+				script.Parent.BackgroundColor3 = Color3.fromRGB(135, 34, 34)
+			end
+		end
+	end)
+	
+	game:GetService("RunService").Stepped:Connect(function()
+		pcall(function()
+			if State then
+				game.Lighting.Brightness = 1
+				game.Lighting.ClockTime = 14
+			end
+		end)
+	end)
+	
+end
+
+----------------------------------------------------------------------------------------------------
 coroutine.wrap(LocalScript_1)(frYNDWPYhXPdIxX.LocalScript_1)
 coroutine.wrap(LocalScript_5)(frYNDWPYhXPdIxX.LocalScript_5)
 coroutine.wrap(LocalScript_6)(frYNDWPYhXPdIxX.LocalScript_6)
@@ -453,3 +577,7 @@ coroutine.wrap(LocalScript_4)(frYNDWPYhXPdIxX.LocalScript_4)
 coroutine.wrap(LocalScript_2)(frYNDWPYhXPdIxX.LocalScript_2)
 coroutine.wrap(LocalScript_3)(frYNDWPYhXPdIxX.LocalScript_3)
 coroutine.wrap(LocalScript_7)(frYNDWPYhXPdIxX.LocalScript_7)
+coroutine.wrap(LocalScript_8)(frYNDWPYhXPdIxX.LocalScript_8)
+coroutine.wrap(LocalScript_9)(frYNDWPYhXPdIxX.LocalScript_9)
+
+--StarterGui:SetCore("DevConsoleVisible", true)
